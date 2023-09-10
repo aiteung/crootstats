@@ -7,7 +7,7 @@
 *.dll
 *.so
 *.dylib
-crootstat
+crootstats
 
 config.go
 
