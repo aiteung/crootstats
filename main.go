@@ -22,5 +22,6 @@ func main() {
 	msg = msg + "_Disk Space Status_\n" + hostname + "\n"
 	msg = msg + all + used + free
 	fmt.Println(msg)
-	iteung.PostNotif(msg, Idgroupdebug, UrlnotifWA)
+	r, e := iteung.PostNotif(msg, Idgroupdebug, UrlnotifWA)
+	fmt.Println(r, e)
 }
