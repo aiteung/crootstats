@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/aiteung/atmessage/iteung"
 )
 
 func main() {
@@ -15,4 +17,5 @@ func main() {
 	msg = msg + "_Disk Space Status_\n"
 	msg = msg + all + used + free
 	fmt.Println(msg)
+	iteung.PostNotif(msg, Idgroupdebug, UrlnotifWA)
 }
