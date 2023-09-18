@@ -21,7 +21,7 @@ func main() {
 	used := fmt.Sprintf("Used: %.2f GB\n", float64(disk.Used)/float64(GB))
 	free := fmt.Sprintf("Free: %.2f GB\n", float64(disk.Free)/float64(GB))
 
-	msg := "*C Root Stats " + hostname + "*\n"
+	msg := "*CRootStats " + hostname + "*\n"
 	msg = msg + "_Disk Space Status_\n"
 	msg = msg + all + used + free
 
